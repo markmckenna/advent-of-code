@@ -1,9 +1,6 @@
 #! python
 
-from functools import singledispatch
 import numpy as np
-
-import sys
 
 # OK so basically we are working with up to 3 dimensional arrays here. The rightmost (deepest)
 # dimension is always the two coordinates of the points. When there is a second dimension, we
