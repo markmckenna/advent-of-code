@@ -6,6 +6,9 @@ def nonempty(iterator):
     return itertools.chain([next(iterator)], iterator)
 
 def partition(iterable, condition):
+    """Partition the given iterable into sub-iterables against the given condition.
+       Example: partition(iterable, lambda x: x != '\n')
+       - Partitions the iterable (of strings) on blank lines"""
     delegate = iter(iterable)
     while True:
         try:
