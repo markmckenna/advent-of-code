@@ -76,7 +76,6 @@ def print_image(image):
     print('rows', image[0])
     print('cols', image[1])
 
-
 with open('d13.txt') as file:
     total = 0
     for part in partition(file, lambda x: x != '\n'):
